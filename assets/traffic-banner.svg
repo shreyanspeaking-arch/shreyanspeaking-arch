@@ -70,7 +70,7 @@
       <ellipse cx="95" cy="53" rx="92" ry="3.5" fill="#000" opacity="0.35"/>
       <polygon points="190,32 280,18 280,48" fill="url(#beam)"/>
       <rect x="0" y="0" width="135" height="40" rx="4" fill="#e9edf2"/>
-      <text x="67" y="26" transform="translate(134 0) scale(-1 1)" font-size="13" font-family="Arial, sans-serif" font-weight="bold" fill="#2b3a55" text-anchor="middle">DELIVERING CODE</text>
+      <text x="67" y="26" transform="translate(134 0) scale(-1 1)" font-size="13" font-family="Arial, sans-serif" font-weight="bold" fill="#2b3a55" text-anchor="middle">TRAFFIC TOOLKIT</text>
       <rect x="133" y="34" width="8" height="6" fill="#444"/>
       <path d="M139 8 H170 Q174 8 177 11 L188 23 Q190 25 190 28 V44 H139 Z" fill="currentColor"/>
       <path d="M150 12 H169 L180 24 H150 Z" fill="#9ad7ff" opacity="0.85"/>
@@ -113,7 +113,7 @@
 
   <!-- title -->
   <text x="450" y="52" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff" letter-spacing="3">WELCOME TO MY LANE</text>
-  <text x="450" y="80" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9fb3d9" letter-spacing="1">building things, one mile at a time</text>
+  <text x="450" y="80" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9fb3d9" letter-spacing="1">Shreyan Pal  ·  Civil Engg @ Jadavpur University</text>
 
   <!-- sidewalk + road -->
   <rect y="108" width="900" height="12" fill="#4a5060"/>
