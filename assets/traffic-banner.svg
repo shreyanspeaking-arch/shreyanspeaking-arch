@@ -113,7 +113,7 @@
 
   <!-- title -->
   <text x="450" y="52" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff" letter-spacing="3">WELCOME TO MY LANE</text>
-  <text x="450" y="80" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9fb3d9" letter-spacing="1">Shreyan Pal  ·  Civil Engg @ Jadavpur University</text>
+  <text x="450" y="80" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9fb3d9" letter-spacing="1">Shreyan Pal  ·  Civil Engineering</text>
 
   <!-- sidewalk + road -->
   <rect y="108" width="900" height="12" fill="#4a5060"/>
