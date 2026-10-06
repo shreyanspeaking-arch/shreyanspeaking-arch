@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/traffic-banner.svg" alt="Animated night road with moving cars, a bus, a taxi, a truck and a traffic light" width="100%" />
+  <img src="assets/traffic-banner.svg" alt="Animated night city with an elevated metro, cars, a bus, a taxi, a truck, a local train and ships on the river" width="100%" />
 </p>
 
 <p align="center">
