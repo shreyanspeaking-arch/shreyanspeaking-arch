@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 44" width="900" height="44">
+  <defs>
+    <g id="wheel">
+      <circle r="5" fill="#111"/>
+      <circle r="2.4" fill="#c9c9c9"/>
+      <g stroke="#555" stroke-width="1">
+        <line x1="-2.4" y1="0" x2="2.4" y2="0"/>
+        <line x1="0" y1="-2.4" x2="0" y2="2.4"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.35s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  </defs>
+  <rect y="18" width="900" height="22" rx="4" fill="#2a2d34"/>
+  <line x1="0" y1="29" x2="900" y2="29" stroke="#f2c230" stroke-width="2" stroke-dasharray="20 14">
+    <animate attributeName="stroke-dashoffset" from="0" to="-34" dur="0.6s" repeatCount="indefinite"/>
+  </line>
+  <g>
+    <path d="M2 12 Q2 9 6 8.5 L16 8 L24 1.5 Q25 0.5 27 0.5 H43 Q45 0.5 47 2 L54 8.5 L60 9.5 Q64 10.5 64 14 V19 Q64 21 62 21 H2 Q0 21 0 19 V14 Z" fill="#e63946"/>
+    <path d="M19 8 L25 2.5 H33 V8 Z M35 8 V2.5 H44 L50 8 Z" fill="#9ad7ff"/>
+    <rect x="61" y="12" width="3" height="3" fill="#fff6b0"/>
+    <use href="#wheel" x="15" y="21"/>
+    <use href="#wheel" x="50" y="21"/>
+    <animateTransform attributeName="transform" type="translate" from="-80 2" to="920 2" dur="6s" repeatCount="indefinite"/>
+  </g>
+</svg>
