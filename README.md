@@ -74,12 +74,3 @@ A collection of Python programs that solve core traffic and highway engineering 
 | Class 10 | Delhi Public School Newtown, Kolkata | 2010 – 2022 | 95.8% |
 
 <img src="assets/road-divider.svg" alt="" width="100%" />
-
-## 📊 GitHub Dashboard
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shreyanspeaking-arch&show_icons=true&theme=tokyonight&hide_border=true" height="160" alt="GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shreyanspeaking-arch&theme=tokyonight&hide_border=true" height="160" alt="GitHub streak" />
-</p>
-
-<img src="assets/road-divider.svg" alt="" width="100%" />
