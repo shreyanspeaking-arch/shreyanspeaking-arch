@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="1" stop-color="#1e2d52"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff6b0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff6b0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ffd76a" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ffd76a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- spinning wheel, centred at 0,0 -->
+    <g id="wheel">
+      <circle r="9" fill="#111"/>
+      <circle r="4.5" fill="#c9c9c9"/>
+      <g stroke="#555" stroke-width="1.5">
+        <line x1="-4.5" y1="0" x2="4.5" y2="0"/>
+        <line x1="0" y1="-4.5" x2="0" y2="4.5"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.4s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- car: 120 wide, faces right, colour from `color` -->
+    <g id="car">
+      <ellipse cx="60" cy="47" rx="58" ry="3.5" fill="#000" opacity="0.35"/>
+      <polygon points="120,24 210,10 210,40" fill="url(#beam)"/>
+      <path d="M4 22 Q4 16 12 15 L30 14 L44 2 Q46 0 50 0 H80 Q84 0 87 3 L100 15 L112 17 Q120 19 120 26 V34 Q120 38 116 38 H4 Q0 38 0 34 V26 Z" fill="currentColor"/>
+      <path d="M36 14 L47 4 H62 V14 Z M66 14 V4 H82 L94 14 Z" fill="#9ad7ff" opacity="0.85"/>
+      <line x1="64" y1="15" x2="64" y2="36" stroke="#000" stroke-opacity="0.25"/>
+      <rect x="114" y="22" width="6" height="5" rx="1" fill="#fff6b0"/>
+      <rect x="0" y="22" width="4" height="6" rx="1" fill="#ff3b3b"/>
+      <use href="#wheel" x="28" y="38"/>
+      <use href="#wheel" x="94" y="38"/>
+    </g>
+
+    <!-- taxi: car + roof sign -->
+    <g id="taxi">
+      <rect x="54" y="-7" width="22" height="7" rx="2" fill="#222"/>
+      <text x="65" y="-1.5" font-size="5.5" font-family="Arial, sans-serif" font-weight="bold" fill="#ffd400" text-anchor="middle">TAXI</text>
+      <use href="#car"/>
+      <rect x="10" y="27" width="100" height="4" fill="#222" opacity="0.6"/>
+    </g>
+
+    <!-- bus: 180 wide -->
+    <g id="bus">
+      <ellipse cx="90" cy="52" rx="88" ry="3.5" fill="#000" opacity="0.35"/>
+      <polygon points="180,34 270,20 270,50" fill="url(#beam)"/>
+      <rect x="0" y="0" width="180" height="43" rx="8" fill="currentColor"/>
+      <g fill="#9ad7ff" opacity="0.85">
+        <rect x="10" y="6" width="22" height="15" rx="2"/>
+        <rect x="38" y="6" width="22" height="15" rx="2"/>
+        <rect x="66" y="6" width="22" height="15" rx="2"/>
+        <rect x="94" y="6" width="22" height="15" rx="2"/>
+        <rect x="122" y="6" width="22" height="15" rx="2"/>
+        <rect x="152" y="6" width="24" height="22" rx="3"/>
+      </g>
+      <rect x="0" y="27" width="150" height="4" fill="#fff" opacity="0.5"/>
+      <rect x="175" y="33" width="5" height="5" rx="1" fill="#fff6b0"/>
+      <rect x="0" y="33" width="4" height="6" rx="1" fill="#ff3b3b"/>
+      <use href="#wheel" x="34" y="43" transform="translate(0 0)"/>
+      <use href="#wheel" x="146" y="43"/>
+    </g>
+
+    <!-- truck: 190 wide -->
+    <g id="truck">
+      <ellipse cx="95" cy="53" rx="92" ry="3.5" fill="#000" opacity="0.35"/>
+      <polygon points="190,32 280,18 280,48" fill="url(#beam)"/>
+      <rect x="0" y="0" width="135" height="40" rx="4" fill="#e9edf2"/>
+      <text x="67" y="26" transform="translate(134 0) scale(-1 1)" font-size="13" font-family="Arial, sans-serif" font-weight="bold" fill="#2b3a55" text-anchor="middle">DELIVERING CODE</text>
+      <rect x="133" y="34" width="8" height="6" fill="#444"/>
+      <path d="M139 8 H170 Q174 8 177 11 L188 23 Q190 25 190 28 V44 H139 Z" fill="currentColor"/>
+      <path d="M150 12 H169 L180 24 H150 Z" fill="#9ad7ff" opacity="0.85"/>
+      <rect x="184" y="31" width="6" height="5" rx="1" fill="#fff6b0"/>
+      <rect x="0" y="30" width="4" height="7" rx="1" fill="#ff3b3b"/>
+      <use href="#wheel" x="26" y="44"/>
+      <use href="#wheel" x="58" y="44"/>
+      <use href="#wheel" x="168" y="44"/>
+    </g>
+  </defs>
+
+  <!-- sky -->
+  <rect width="900" height="260" fill="url(#sky)"/>
+  <g fill="#fff">
+    <circle cx="120" cy="20" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="38" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="410" cy="14" r="1.3"><animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="30" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="16" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="42" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+  </g>
+  <circle cx="845" cy="38" r="16" fill="#f4f1c9" opacity="0.9"/>
+  <circle cx="853" cy="33" r="14" fill="#16213f"/>
+
+  <!-- skyline -->
+  <g fill="#111a33">
+    <rect x="0" y="62" width="50" height="50"/><rect x="55" y="45" width="40" height="67"/>
+    <rect x="160" y="70" width="60" height="42"/><rect x="225" y="52" width="35" height="60"/>
+    <rect x="330" y="66" width="45" height="46"/><rect x="520" y="58" width="50" height="54"/>
+    <rect x="575" y="74" width="40" height="38"/><rect x="660" y="50" width="38" height="62"/>
+    <rect x="705" y="68" width="55" height="44"/><rect x="845" y="56" width="55" height="56"/>
+  </g>
+  <g fill="#ffd76a" opacity="0.7">
+    <rect x="63" y="54" width="5" height="5"/><rect x="80" y="70" width="5" height="5"/>
+    <rect x="233" y="62" width="5" height="5"/><rect x="246" y="80" width="5" height="5"/>
+    <rect x="530" y="68" width="5" height="5"/><rect x="552" y="86" width="5" height="5"/>
+    <rect x="668" y="60" width="5" height="5"/><rect x="683" y="78" width="5" height="5"/>
+    <rect x="858" y="66" width="5" height="5"><animate attributeName="opacity" values="1;1;0;1" dur="5s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- title -->
+  <text x="450" y="52" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff" letter-spacing="3">WELCOME TO MY LANE</text>
+  <text x="450" y="80" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9fb3d9" letter-spacing="1">building things, one mile at a time</text>
+
+  <!-- sidewalk + road -->
+  <rect y="108" width="900" height="12" fill="#4a5060"/>
+  <rect y="120" width="900" height="122" fill="#2a2d34"/>
+  <rect y="242" width="900" height="18" fill="#4a5060"/>
+  <line x1="0" y1="123" x2="900" y2="123" stroke="#e8e8e8" stroke-width="2" opacity="0.6"/>
+  <line x1="0" y1="239" x2="900" y2="239" stroke="#e8e8e8" stroke-width="2" opacity="0.6"/>
+  <line x1="0" y1="180" x2="900" y2="180" stroke="#f2c230" stroke-width="3" stroke-dasharray="34 22"/>
+
+  <!-- street lamps -->
+  <g>
+    <circle cx="182" cy="44" r="28" fill="url(#glow)"/>
+    <rect x="158" y="40" width="4" height="70" fill="#20242e"/>
+    <path d="M160 40 Q160 36 166 36 H182" stroke="#20242e" stroke-width="3" fill="none"/>
+    <rect x="176" y="36" width="12" height="5" rx="2" fill="#ffe08a"/>
+    <circle cx="752" cy="44" r="28" fill="url(#glow)"/>
+    <rect x="728" y="40" width="4" height="70" fill="#20242e"/>
+    <path d="M730 40 Q730 36 736 36 H752" stroke="#20242e" stroke-width="3" fill="none"/>
+    <rect x="746" y="36" width="12" height="5" rx="2" fill="#ffe08a"/>
+  </g>
+
+  <!-- traffic light -->
+  <g>
+    <rect x="57" y="60" width="5" height="50" fill="#20242e"/>
+    <rect x="45" y="6" width="29" height="64" rx="6" fill="#16181d" stroke="#3a3f4b"/>
+    <circle cx="59.5" cy="19" r="7" fill="#ff3b3b">
+      <animate attributeName="opacity" values="1;0.15" keyTimes="0;0.45" dur="6s" calcMode="discrete" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="59.5" cy="38" r="7" fill="#ffc400">
+      <animate attributeName="opacity" values="0.15;1" keyTimes="0;0.85" dur="6s" calcMode="discrete" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="59.5" cy="57" r="7" fill="#2bd96b">
+      <animate attributeName="opacity" values="0.15;1;0.15" keyTimes="0;0.45;0.85" dur="6s" calcMode="discrete" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- eastbound lane (left to right) -->
+  <g transform="translate(-200 127)">
+    <use href="#car" color="#e63946"/>
+    <animateTransform attributeName="transform" type="translate" from="-220 127" to="1100 127" dur="9s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <use href="#bus" color="#f4a300"/>
+    <animateTransform attributeName="transform" type="translate" from="-220 121" to="1100 121" dur="9s" begin="-3s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <use href="#taxi" color="#ffd400"/>
+    <animateTransform attributeName="transform" type="translate" from="-220 127" to="1100 127" dur="9s" begin="-6s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- westbound lane (right to left, mirrored) -->
+  <g>
+    <g transform="scale(-1 1)"><use href="#truck" color="#3a86ff"/></g>
+    <animateTransform attributeName="transform" type="translate" from="1120 186" to="-120 186" dur="7s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <g transform="scale(-1 1)"><use href="#car" color="#2ec4b6"/></g>
+    <animateTransform attributeName="transform" type="translate" from="1120 192" to="-120 192" dur="7s" begin="-3.5s" repeatCount="indefinite"/>
+  </g>
+</svg>
