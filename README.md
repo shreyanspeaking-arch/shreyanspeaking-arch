@@ -45,7 +45,9 @@
 
 <img src="assets/road-divider.svg" alt="" width="100%" />
 
-## 🚧 Featured Project: [Traffic Engineering Toolkit](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems)
+## 🚧 Featured Projects
+
+### 🚦 [Traffic Engineering Toolkit](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems)
 
 A collection of Python programs that solve core traffic and highway engineering problems. Results are exported to Excel and visualised with Matplotlib.
 
@@ -62,6 +64,19 @@ A collection of Python programs that solve core traffic and highway engineering 
 | 9 | 📈 **Traffic Flow Parameters** | Daily/monthly variation factors, **AADT** and annual vehicle-km travelled |
 | 10 | 🦺 **Traffic Safety Analysis** | **HSM** crash prediction at signalized intersections and safe stopping distance comparison |
 | 11 | 🚦 **Traffic Volume Studies** | ADT, AWT and AADT/AAWT/AAWeT computation with trend plots |
+
+### 🏙️ [Urban Mobility GIS Toolkit](https://github.com/shreyanspeaking-arch/Urban-Mobility-Geographic-Information-Systems)
+
+Python programs that map and measure the electoral wards of Indian cities from ward-boundary GeoPackages, using **GeoPandas** for projections, spatial joins and overlays, and **OSMnx** for OpenStreetMap data. Results are exported to Excel and drawn as choropleth maps, with sample outputs for 8 cities: Ahmedabad, Bengaluru, Chennai, Delhi, Hyderabad, Jaipur, Kolkata and Mumbai.
+
+| # | Module | What it does |
+|:-:|---|---|
+| 1 | 📐 [**Ward Area Map**](https://github.com/shreyanspeaking-arch/Urban-Mobility-Geographic-Information-Systems/tree/Ward-Area-Map) | Area of every ward in km² |
+| 2 | 📏 [**Ward Perimeter Map**](https://github.com/shreyanspeaking-arch/Urban-Mobility-Geographic-Information-Systems/tree/Ward-Perimeter-Map) | Perimeter of every ward in km |
+| 3 | 🛣️ [**Ward Road Density**](https://github.com/shreyanspeaking-arch/Urban-Mobility-Geographic-Information-Systems/tree/Ward-Road-Density) | Length of drivable roads per km² of each ward, from the OpenStreetMap road network |
+| 4 | 🏥 [**Ward Healthcare Facilities**](https://github.com/shreyanspeaking-arch/Urban-Mobility-Geographic-Information-Systems/tree/Ward-Healthcare-Facilities) | Number and density of hospitals, clinics and other healthcare facilities in each ward |
+| 5 | 🎓 [**Ward Educational Institutions**](https://github.com/shreyanspeaking-arch/Urban-Mobility-Geographic-Information-Systems/tree/Ward-Educational-Institutions) | Number and density of schools, colleges and universities in each ward |
+| 6 | 🚆 [**Ward Railway Network**](https://github.com/shreyanspeaking-arch/Urban-Mobility-Geographic-Information-Systems/tree/Ward-Railway-Network) | Railway stations on the ward map, sorted into suburban/local rail and metro by operator |
 
 <img src="assets/road-divider.svg" alt="" width="100%" />
 
